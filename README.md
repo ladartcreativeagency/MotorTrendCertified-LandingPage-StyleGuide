@@ -1,7 +1,7 @@
 MotorTrendCertified-LandingPage-StyleGuide
 ==========================================
 
-# Info for Using and Managing MotorTrend Certified Landing Page Style Guide
+Add Info for Using and Managing MotorTrend Certified Landing Page Style Guide Here
 
  
 [View Current Style Guide ](http://www.easycaredealer.com/marketo-assets/mtc-landingpage-styleguide/)
