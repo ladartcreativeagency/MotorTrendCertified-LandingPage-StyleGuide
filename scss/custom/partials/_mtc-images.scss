@@ -1,0 +1,33 @@
+
+img.aligncenter {
+  margin: 0px auto;
+  display: block;
+}
+
+img.alignleft {
+  float: left;
+  margin-right: 1em;
+}
+
+img.alignright {
+  float: right;
+  margin-left: 1em;
+}
+
+figure.aligncenter {
+  margin: 0px auto;
+  display: block;
+}
+
+figure.alignleft {
+  float: left;
+  margin-right: 1em;
+  figcaption { display: block; text-align: center; }
+}
+
+figure.alignright {
+  float: right;
+  margin-left: 1em;
+  figcaption { display: block; text-align: center; }
+}
+

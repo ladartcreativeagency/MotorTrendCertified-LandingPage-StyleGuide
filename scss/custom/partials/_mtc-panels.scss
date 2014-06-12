@@ -1,0 +1,264 @@
+
+
+.panel.inset {
+  box-shadow: inset 0px 0px 4px rgba(0,0,0,0.6);
+  -webkit-box-shadow: inset 0px 0px 4px rgba(0,0,0,0.2);
+  -moz-box-shadow: inset 0px 0px 4px rgba(0,0,0,0.2);  
+}
+
+.panel.redRibbon {
+  position: relative;
+  padding-top: 4em;
+  
+  &:before {
+    content: url("../img/redRibbon.png");
+    width: 197px;
+    height: 66px;
+    position: absolute;
+    top: 15px;
+    left: -24px;
+  }
+  &:after {
+    content: url("../img/redCorner.png");
+    width: 17px;
+    height: 18px;
+    position: absolute;
+    bottom: 0;
+    right: 0;
+  }
+}
+.panel.darkRibbon {
+  position: relative;
+  padding-top: 4em;
+  
+  &:before {
+    content: url("../img/darkRibbon.png");
+    width: 197px;
+    height: 66px;
+    position: absolute;
+    top: 15px;
+    left: -24px;
+  }
+  &:after {
+    content: url("../img/darkCorner.png");
+    width: 17px;
+    height: 18px;
+    position: absolute;
+    bottom: 0;
+    right: 0;
+  }
+}
+
+
+.panel.darkGradient {
+  background-color: #262626;
+  @include gradient(linear,left top,rgb(38, 38, 38),rgb(68, 68, 68),'left top, right bottom');
+  filter: progid:DXImageTransform.Microsoft.gradient(GradientType=1,StartColorStr='#262626', EndColorStr='#444444');
+
+  border-color: #020202;
+  color: $white;
+   
+  border-radius: 8px;
+  -webkit-border-radius: 8px;
+  -moz-border-radius: 8px;
+  
+  label { color: $white; }
+}
+
+.panel.smokeGradient {
+  background-color: #a4a3a6;
+  @include gradient(linear,left top,rgb(164, 163, 166),rgb(227, 227, 228),'left top, right bottom');
+  filter: progid:DXImageTransform.Microsoft.gradient(GradientType=1,StartColorStr='#a4a3a6', EndColorStr='#e3e3e4');
+  
+  border-color: #8b8a8f;
+  
+  color: $primary-color;
+  
+  border-radius: 8px;
+  -webkit-border-radius: 8px;
+  -moz-border-radius: 8px;
+}
+
+.panel.redGradient {
+  
+  color: $white;
+  
+  background-color: #be041f;
+  @include gradient(linear,left top,rgb(190, 4, 31),rgb(235, 2, 42),'left top, right bottom');
+  filter: progid:DXImageTransform.Microsoft.gradient(GradientType=1,StartColorStr='#be041f', EndColorStr='#eb022a');
+  
+  border-color: #af041f;
+    
+  border-radius: 8px;
+  -webkit-border-radius: 8px;
+  -moz-border-radius: 8px;
+  
+  label { color: $white; }
+}
+
+
+
+.panel.redGradient {
+  
+ .mktoForm .mktoAsterix {
+    color: $white !important;
+  }
+  
+}
+
+
+.panel.smokeGradient, 
+.panel.darkGradient { 
+
+ .mktoForm .mktoAsterix {
+    color: $primary-color !important;
+  }
+
+}
+
+
+.panel.redGradient, 
+.panel.smokeGradient, 
+.panel.darkGradient {
+  
+ span.mktoButtonWrap {
+    margin: 0px auto;
+    text-align: center;
+    display: block;
+    margin-bottom: 0em;
+    
+    .mktoButton {
+      margin-bottom: 0em;
+      position: relative;
+      bottom: -2.5em;
+      border: 4px solid $white;
+      border-radius: 8px;
+      -webkit-border-radius: 8px;
+      -moz-border-radius: 8px;      
+    }
+  }
+  
+}
+
+
+
+
+
+.redSpeechPanel {
+  position: relative; 
+  width: 100%; 
+  margin: 0em auto;   
+  z-index: 1;
+  padding: 1em;
+  
+  margin-bottom: 3em;
+  
+  background-color: #be041f;
+  @include gradient(linear,left top,rgb(190, 4, 31),rgb(235, 2, 42),'left top, right bottom');
+  filter: progid:DXImageTransform.Microsoft.gradient(GradientType=1,StartColorStr='#be041f', EndColorStr='#eb022a');
+  
+  border-color: #af041f;
+  
+  &:before {
+    content: "";
+    display: block;
+    position: absolute;
+    top: 100%;
+    left: 12%; 
+    
+    z-index: 2;
+    
+    width: 0;
+  	height: 0; 
+  	
+    border-left: 25px solid transparent;
+  	border-right: 25px solid transparent;
+  	border-top: 25px solid #be041f;
+  }
+   
+}
+
+
+
+.darkSpeechPanel {
+  position: relative; 
+  width: 100%; 
+  margin: 0em auto;   
+  z-index: 1;
+  padding: 1em;
+  
+  margin-bottom: 3em;
+    background-color: #262626;
+  @include gradient(linear,left top,rgb(38, 38, 38),rgb(68, 68, 68),'left top, right bottom');
+  filter: progid:DXImageTransform.Microsoft.gradient(GradientType=1,StartColorStr='#262626', EndColorStr='#444444');
+
+  border-color: #020202;
+  color: $white;
+    
+  &:before {
+    content: "";
+    display: block;
+    position: absolute;
+    top: 100%;
+    left: 12%; 
+    
+    z-index: 2;
+    
+    width: 0;
+  	height: 0; 
+  	
+    border-left: 25px solid transparent;
+  	border-right: 25px solid transparent;
+  	border-top: 25px solid #262626;
+  }
+   
+}
+
+
+
+.smokeSpeechPanel {
+  position: relative; 
+  width: 100%; 
+  margin: 0em auto;   
+  z-index: 1;
+  padding: 1em;
+  
+  margin-bottom: 3em;
+  
+  background-color: #a4a3a6;
+  @include gradient(linear,left top,rgb(164, 163, 166),rgb(227, 227, 228),'left top, right bottom');
+  filter: progid:DXImageTransform.Microsoft.gradient(GradientType=1,StartColorStr='#a4a3a6', EndColorStr='#e3e3e4');
+  
+  border-color: #8b8a8f;
+  
+  &:before {
+    content: "";
+    display: block;
+    position: absolute;
+    top: 100%;
+    left: 12%; 
+    
+    z-index: 2;
+    
+    width: 0;
+  	height: 0; 
+  	
+  border-left: 25px solid transparent;
+	border-right: 25px solid transparent;
+	border-top: 25px solid #b0b0b2;
+  }
+   
+}
+
+ 
+
+/*
+
+ <div class="block">
+  <div class="innerblock">
+    <p>To display a box-shadowed container including an overlapping Toggle button which ‘inherits’ the box-shadow of its outer element.</p>
+  </div>
+  <a href="#" class="block_toggle">Show / Hide</a>
+</div>
+*/
+

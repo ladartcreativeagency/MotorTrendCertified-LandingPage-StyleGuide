@@ -1,0 +1,43 @@
+
+.button, button {
+  text-transform: uppercase !important;
+  font-weight: 800 !important;
+  transition: all 0.3s ease;
+  -webkit-transition: all 0.3s ease;
+  -moz-transition: all 0.3s ease;
+  -ms-transition: all 0.3s ease;
+  -o-transition: all 0.3s ease;
+  
+  // @extend %sharpTextShadow;
+}
+
+
+
+.button.primary, button.primary {
+  background-color: #bd051f;
+  @include gradient(linear,top,rgb(189, 5, 31),rgb(234, 3, 42),'left top, left bottom');
+  filter: progid:DXImageTransform.Microsoft.gradient(GradientType=0,StartColorStr='#bd051f', EndColorStr='#ea032a'); 
+
+  transition: all 0.3s ease;
+  -webkit-transition: all 0.3s ease;
+  -moz-transition: all 0.3s ease;
+  -ms-transition: all 0.3s ease;
+  -o-transition: all 0.3s ease;
+  
+  letter-spacing: 1px; 
+  
+  // @extend %sharpTextShadow;
+  
+  -webkit-box-shadow: 0px 2px 1px 0px rgba(50, 50, 50, 0.75);
+  -moz-box-shadow:    0px 2px 1px 0px rgba(50, 50, 50, 0.75);
+  box-shadow:         0px 2px 1px 0px rgba(50, 50, 50, 0.75);
+          
+  &:hover {
+    background-color: #a8031b;
+    @include gradient(linear,top,rgb(168, 3, 27),rgb(211, 5, 37),'left top, left bottom');
+    filter: progid:DXImageTransform.Microsoft.gradient(GradientType=0,StartColorStr='#a8031b', EndColorStr='#d30525');
+  }
+}
+
+
+

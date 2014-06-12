@@ -1,0 +1,107 @@
+
+
+
+nav.mainNav {
+  background: $primary-color;
+  color: $white;
+  margin: 0px auto;
+  margin-top: 0em;
+  margin-bottom: 0em;
+  position: relative;
+  width: 100%;
+  padding: 0em;
+  ul {
+    margin-bottom: 0em;
+    
+    li a {
+      color: $white;
+      @include headingFontMediumItalic;
+      padding: 1em 1.25em;
+      margin-bottom: 0em; 
+      height: 100%;
+      display: block;    
+      border-left: 1px solid transparent;
+      border-right: 1px solid transparent;   
+     // margin-left: -.375em;
+     
+    transition: all 0.3s ease;
+    -webkit-transition: all 0.3s ease;
+    -moz-transition: all 0.3s ease;
+    -ms-transition: all 0.3s ease;
+    -o-transition: all 0.3s ease;
+    
+      &:hover {
+        background: darken($primary-color, 5%);
+        border-left: 1px solid darken($primary-color, 7%);
+        border-right: 1px solid darken($primary-color, 7%);
+      }
+    }
+  } 
+}
+
+
+ul.mtcIcons {
+  [class^="icon-"], [class*=" icon-"] { 
+    display: block;
+    font-size: 80px;
+    text-align: center;
+    margin-bottom: .15em;
+    color: $secondary-color;
+    
+    transition: all 0.3s ease;
+    -webkit-transition: all 0.3s ease;
+    -moz-transition: all 0.3s ease;
+    -ms-transition: all 0.3s ease;
+    -o-transition: all 0.3s ease;
+    
+    &:hover {
+      color: $primary-color;
+      font-size: 130px;
+    }
+   }
+}
+
+
+
+
+.heroBackgroundTest {
+  background: url(../img/auto-aftermarket-digital-driver_research-studies_bn.jpg) center bottom no-repeat;
+}
+
+
+.gridExample {
+  .panel {
+    p {
+      font-size: .75em;
+      text-align: center;
+    }
+  }
+}
+
+
+section.logos {
+  .columns img {
+    margin: 0px auto;
+    margin-top: 1.5em;
+    margin-bottom: 1.5em;
+  }
+}
+
+span.mls {
+	font-family: 'Gotham Cond A', 'Gotham Cond B';  
+	font-style: italic;
+	font-weight: 400;
+}
+
+
+.exampleHFbackground {
+   background-color: #272627;
+  @include gradient(linear,top,rgb(39, 38, 39),rgb(0, 0, 0),'left top, left bottom');
+  filter: progid:DXImageTransform.Microsoft.gradient(GradientType=0,StartColorStr='#272627', EndColorStr='#000000');
+}
+
+.panel.redRibbon, .panel.darkRibbon {
+  min-height: 200px;
+}
+
+

@@ -1,0 +1,178 @@
+
+
+
+
+
+
+// Heading Fonts
+@mixin headingFontLight {
+	font: {
+ 		font-family: 'Gotham Cond A', 'Gotham Cond B';  
+		font-style: normal;
+		font-weight: 300;
+	}
+}
+
+@mixin headingFont {
+	font: {
+		font-family: 'Gotham Cond A', 'Gotham Cond B';  
+		font-style: normal;
+		font-weight: 400;
+	}
+}
+
+@mixin headingFontMedium {
+	font: {
+ 		font-family: 'Gotham Cond A', 'Gotham Cond B';  
+		font-style: normal;
+		font-weight: 500;
+	}
+}
+
+@mixin headingFontBold {
+	font: {
+ 		font-family: 'Gotham Cond A', 'Gotham Cond B';  
+		font-style: normal;
+		font-weight: 600;
+	}
+}
+
+@mixin headingFontLightItalic {
+	font: {
+ 		font-family: 'Gotham Cond A', 'Gotham Cond B';  
+		font-style: italic;
+		font-weight: 300;
+	}
+}
+
+// Heading Italic Fonts
+@mixin headingFontItalic {
+	font: {
+		font-family: 'Gotham Cond A', 'Gotham Cond B';  
+		font-style: italic;
+		font-weight: 400;
+	}
+}
+
+@mixin headingFontMediumItalic {
+	font: {
+ 		font-family: 'Gotham Cond A', 'Gotham Cond B';  
+		font-style: italic;
+		font-weight: 500;
+	}
+}
+
+@mixin headingFontBoldItalic {
+	font: {
+ 		font-family: 'Gotham Cond A', 'Gotham Cond B';  
+		font-style: italic;
+		font-weight: 600;
+	}
+}
+
+
+
+
+
+
+// Paragraph Fonts
+@mixin paragraphFontLight {
+	font: {
+ 		font-family: 'Gotham A', 'Gotham B';  
+		font-style: normal;
+		font-weight: 300;
+	}
+}
+ 
+@mixin paragraphFont {
+	font: {
+ 		font-family: 'Gotham Cond A', 'Gotham Cond B';  
+		font-style: normal;
+		font-weight: 400;
+	}
+}
+
+@mixin paragraphFontMedium {
+	font: {
+ 		font-family: 'Gotham A', 'Gotham B';  
+		font-style: normal;
+		font-weight: 500;
+	}
+}
+
+@mixin paragraphFontBold {
+	font: {
+ 		font-family: 'Gotham A', 'Gotham B';  
+		font-style: normal;
+		font-weight: 700;
+	}
+}
+
+@mixin paragraphFontBlack {
+	font: {
+ 		font-family: 'Gotham A', 'Gotham B';  
+		font-style: normal;
+		font-weight: 800;
+	}
+}
+ 
+@mixin paragraphFontUltra {
+	font: {
+ 		font-family: 'Gotham A', 'Gotham B';  
+		font-style: normal;
+		font-weight: 900;
+	}
+}
+ 
+@mixin paragraphFontLightItalic {
+	font: {
+ 		font-family: 'Gotham A', 'Gotham B';  
+		font-style: italic;
+		font-weight: 300;
+	}
+}
+
+// Paragraph Italic Fonts
+@mixin paragraphFontItalic {
+	font: {
+ 		font-family: 'Gotham Cond A', 'Gotham Cond B';  
+		font-style: italic;
+		font-weight: 400;
+	}
+}
+
+@mixin paragraphFontMediumItalic {
+	font: {
+ 		font-family: 'Gotham A', 'Gotham B';  
+		font-style: italic;
+		font-weight: 500;
+	}
+}
+
+@mixin paragraphFontBoldItalic {
+	font: {
+ 		font-family: 'Gotham A', 'Gotham B';  
+		font-style: italic;
+		font-weight: 700;
+	}
+}
+
+@mixin paragraphFontBlackItalic {
+	font: {
+ 		font-family: 'Gotham A', 'Gotham B';  
+		font-style: italic;
+		font-weight: 800;
+	}
+}
+ 
+@mixin paragraphFontUltraItalic {
+	font: {
+ 		font-family: 'Gotham A', 'Gotham B';  
+		font-style: italic;
+		font-weight: 900;
+	}
+}
+
+
+
+

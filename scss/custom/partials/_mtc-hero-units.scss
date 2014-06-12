@@ -1,0 +1,51 @@
+
+
+
+section.heroUnit {
+  position: relative;
+   -webkit-background-size: cover;
+	-moz-background-size: cover;
+	-o-background-size: cover;
+	background-size: cover;
+  /* The url is relative to the document, not to the css file! */
+  /* Prefer absolute urls to avoid confusion. */
+  -ms-behavior: url(../../../javascripts/vendor/backgroundsize.min.htc);
+  width: 100%;
+  margin: 0px auto;
+  padding: 0px;
+  
+  @extend %darkTextShadow;
+  
+  .row {
+    padding: 8em 0em;
+    margin: 0px auto;
+    position: relative;
+  }
+
+  .redOverlay {
+    background: url(../img/redOverlay.png) repeat;
+    width: 100%;
+    height: 100%;
+    margin: 0px;
+    padding: 0px;
+    position: absolute;
+  }
+  .blackOverlay {
+    background: url(../img/darkOverlay.png) repeat;
+    width: 100%;
+    height: 100%;
+    margin: 0px;
+    padding: 0px;
+    position: absolute;
+  }
+  .secondaryOverlay {
+    background: url(../img/secondaryOverlay.png) repeat;
+    width: 100%;
+    height: 100%;
+    margin: 0px;
+    padding: 0px;
+    position: absolute;
+  }
+}
+
+

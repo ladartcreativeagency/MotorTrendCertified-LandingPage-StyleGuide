@@ -1,0 +1,337 @@
+textarea {
+  min-height: 150px;
+}
+
+
+
+
+input[type=date], input[type=datetime-local], input[type=datetime], input[type=email], input[type=month], input[type=number], input[type=password], input[type=search], input[type=tel], input[type=text], input[type=time], input[type=url], input[type=week], textarea {
+  border-radius: 3px;
+}
+
+fieldset legend {
+  color: $white;
+  font-weight: 400;
+  padding: .5em .75em;
+  border-radius: 3px;
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+/* --- Custom select --- */
+
+/* select and styled button should have the same font size */
+select {	
+	font-size: 1em; 
+}
+
+.custom-select {
+	position: relative;
+}
+.custom-select select {
+	position: absolute;
+	top: 0;
+	right: 0;
+	padding: 0;
+	opacity: 0.001;	
+}
+.custom-select select,
+.custom-select .btn-select {
+	/* the hidden select and the button should line up */
+	width: 20em; 
+	padding: .2em .5em;
+	font-weight: bold;
+}
+.custom-select .btn-select {
+	position: relative;
+	display: inline-block;
+	border: 1px solid $mediumGray;
+	border-radius: .2em;	
+}
+.btn-select.btn-focus {
+	border-color: $primary-color;
+	box-shadow: 0 0 .4em rgba(200,200,200,.8);
+}
+.custom-select .btn-select:after {
+	content: " ";	
+	display: block;
+	background: url(../img/arrow-solid-down.png) no-repeat 0 0; /* PNG for demo only; should be an SVG with PNG fallback in production */
+	width: 1em;
+	height: 1em;
+	position: absolute;
+	top: 0em;
+	right: 0;
+	background-position: 0 .5em;
+}
+.custom-select .label-text {
+	display: inline-block;
+	padding: 0 1em .3em 0;
+}
+
+
+
+
+
+
+/* Custom checkbox & radio button styles */
+ul, li{
+	list-style: none;
+	padding-left: 0;
+}
+.icon-check {
+	background-image: url('data:image/svg+xml;charset=US-ASCII,<svg%20xmlns%3D"http%3A%2F%2Fwww.w3.org%2F2000%2Fsvg"%20width%3D"18.134"%20height%3D"15.066"><polygon%20fill%3D"%23fff"%20points%3D"18.134%2C3.119%2015.013%2C0%206.187%2C8.827%203.12%2C5.76%200%2C8.878%206.185%2C15.066%206.187%2C15.064%206.187%2C15.066"%2F><%2Fsvg>');
+	background-repeat: no-repeat;
+}
+
+.listview > fieldset, .listview > label, .listview > div, .listview > li {
+	border-bottom: 1px solid $smoke;
+	border-left: .4em dotted transparent;
+	padding: 12px 10px;
+}
+
+.listview > fieldset:before,
+.listview > fieldset:after,
+.listview > label:before,
+.listview > label:after,
+.listview > div:before,
+.listview > div:after,
+.listview > li:before,
+.listview > li:after {
+	content: " ";
+	display: table;
+}
+
+.checkbox,
+.radiobutton {
+	margin: 0;
+	padding: 0;
+	border: 0;
+	-webkit-touch-callout: none;
+	-webkit-user-select: none;
+	-moz-user-select: none;
+	user-select: none;
+	cursor: pointer;
+}
+
+.checkbox:before,
+.radiobutton:before {
+	content: " ";
+	display: table;
+}
+
+.checkbox:after,
+.radiobutton:after {
+	clear: both;
+	content: " ";
+	display: table;
+}
+
+.enhanced .checkbox input,
+.enhanced .radiobutton input,
+.enhanced .radio-strip input {
+	position: absolute;
+	z-index: 1;
+	opacity: 0;
+	outline: none;
+}
+
+.checkbox .label-text,
+.radiobutton .label-text,
+.radio-strip .label-text {
+	position: relative;
+	float: none;
+	width: auto;
+	display: inline-block;
+	padding-left: .5em;
+	z-index: 3;
+	color: $black;
+}
+.enhanced .checkbox .label-text,
+.enhanced .listview.checkbox-strip .label-text,
+.enhanced .listview .radiobutton .label-text,
+.enhanced .radio-strip .label-text {
+	padding-left: 43px;
+	font-size: 1em; 
+}
+
+.enhanced .listview.checkbox-strip .inner .label-text {
+	font-size: 13px;
+	font-size: .8125rem;
+	padding-left: 0;
+}
+
+.checkbox .label-text {
+	color: $black;
+}
+.checkbox .label-text em {
+	font-style: normal;
+}
+.enhanced .checkbox .label-text em {
+	display: block;
+	font-size: .866666667em;
+	color: $black;
+}
+
+.checkbox .label-text .icon-check,
+.enhanced .radiobutton .label-text:after {
+	display: block;
+	content: " ";
+	position: absolute;
+	background-color: $mediumGray;
+	background-position: center;
+	left: 0;
+/*	@include globalShadow; */
+}
+.checkbox .label-text .icon-check {
+	background-position: -100em 50%;
+	top: .1em;	
+	width: 32px;
+	height: 32px;	
+	border-radius: .35em;
+}
+.checkbox.checked .label-text .icon-check {
+	background-position: 50% 50%;
+}
+.checkbox-strip .checkbox .label-text .icon-check {
+	top: 50%;
+	font-size: 1em;	
+	margin-top: -.95em;
+	width: 28px;
+	height: 28px;	
+	background-size: 60%;
+}
+.listview .checkbox .label-text .icon-check {
+	left: -3px;
+}
+.enhanced .radiobutton .label-text:after {
+	top: 50%;
+	margin-top: -12px;
+	width: 11px;
+	height: 11px;
+	border: 7px dotted transparent;
+	border-radius: 100%;	
+}
+
+.checkbox.checked .label-text .icon-check {
+	background-color: $primary-color;
+}
+
+label.radiobutton .label-text img {
+	display: inline;
+	margin: -.3em 0.5em 0 0;
+	vertical-align: middle;
+	width: 50px;
+}
+
+.radiobutton.checked .label-text:after {
+	border-style: solid;
+	border-color: $primary-color;
+	background-color: $mediumGray;
+}
+
+/* horizontal radio button set */
+@media all and (min-width: 40em){
+	.radio-strip,
+	.enhanced fieldset.radio-strip {
+		padding: 0;
+		margin: 0;
+		border: 0;
+		border-top: 1px solid $mediumGray;
+		/*@include globalShadow;*/
+		border-radius: .35em;
+		background-color: $mediumGray;
+		overflow: hidden;
+	}
+	.radio-strip label {
+		-webkit-tap-highlight-color:	rgba(255, 255, 255, 0);
+	}
+	.radio-strip > label {
+		position: relative;
+		padding: 15px 10px;
+		border-bottom: 1px solid $mediumGray;
+	}
+	.radio-strip > label:first-child .label-text {
+		border-top-left-radius: .4em;
+		border-bottom-left-radius: .4em;
+	}
+	.radio-strip > label:last-child .label-text {
+		border-top-right-radius: .4em;
+		border-bottom-right-radius: .4em;
+		border-right: 0;
+	}
+	.enhanced .radio-strip {
+		display: table;	
+	}
+	.enhanced .radio-strip > label {
+		display: table-cell;
+		vertical-align: middle;
+		position: relative;
+		overflow: hidden;
+		-webkit-touch-callout: none;
+		/*@include user-select(none);*/
+		margin: 0;
+		padding: 0;
+		width: 1%; /* divide cell widths */
+		border: 0;
+	}
+	.enhanced .radio-strip .label-text {
+		position: relative;
+		display: block;
+		padding: 0.75em 0;
+		margin: 0;
+		cursor: pointer;
+		background-color: $smoke;
+		text-align: center;
+		border-right: 1px solid $mediumGray;
+		min-width: 100%;
+	}
+	.enhanced .radio-strip .checked .label-text {
+		background: $primary-color;
+		color: $white;
+	}
+	.enhanced .radio-strip .label-text:after {
+		display: none;
+	}
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+

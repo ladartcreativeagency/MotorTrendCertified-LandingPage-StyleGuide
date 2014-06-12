@@ -1,0 +1,133 @@
+/*=========================================================================================
+=            Marketo CRM Web Form CSS Style Selectors [last updated Apr. 2014]            =
+=========================================================================================*/
+
+  
+  #mktoStyleLoaded {
+    /* css load detection, do not remove */
+    color: $primary-color;
+  }
+  .mktoForm fieldset {
+    
+  }
+  .mktoForm fieldset legend{ 
+    width: 100% !important;
+  }
+  .mktoForm input[type=text],
+  .mktoForm input[type=url],
+  .mktoForm input[type=email],
+  .mktoForm input[type=tel],
+  .mktoForm input[type=number],
+  .mktoForm input[type=date]{ 
+    width: 100% !important;
+  }
+  
+  .mktoForm input[type=text],
+  .mktoForm input[type=url],
+  .mktoForm input[type=email],
+  .mktoForm input[type=tel],
+  .mktoForm input[type=number],
+  .mktoForm input[type=date],
+  .mktoForm textarea.mktoField,
+  .mktoForm select.mktoField {
+    width: 100% !important;
+  }
+  
+  .mktoForm input[type=text]:focus,
+  .mktoForm input[type=url]:focus,
+  .mktoForm input[type=email]:focus,
+  .mktoForm input[type=tel]:focus,
+  .mktoForm input[type=number]:focus,
+  .mktoForm input[type=date]:focus,
+  .mktoForm select.mktoField:focus,
+  .mktoForm textarea.mktoField:focus{
+    outline: none !important;
+  }
+
+ 
+/*-----  End of Marketo CRM Web Form CSS Style Selectors [last updated Apr. 2014]  ------*/
+
+
+form.mktoForm {
+  margin: 0px auto !important;
+}
+.mktoOffset { 
+  display: none !important;
+}
+.mktoForm .mktoLabel {
+  float: none !important;
+}
+ 
+.mktoLabel {
+  display: block !important;
+  width: 100% !important;
+  margin-bottom: 0em !important;
+}
+ 
+.mktoForm .mktoField {
+  min-width: 250px !important;
+  width: 100% !important;
+  display: block !important;
+  float: none !important;
+  line-height: normal !important;
+  margin: 0px auto !important;
+}
+ 
+.mktoTextField {
+  
+}
+.mktoCheckboxList {
+  min-width: 250px !important;
+  width: 100% !important;
+  display: block !important;
+  float: none !important;
+  line-height: normal !important;
+  margin: 0px auto !important;
+  
+ 
+}
+
+                       
+ .mktoLogicalField .mktoCheckboxList { 
+  min-width: 250px !important;
+  width: 100% !important;
+  display: block !important;
+  float: none !important;
+  line-height: normal !important;
+  margin: 0px auto !important;
+  
+  input.mktoField { 
+    display: block !important;
+  }
+  label {
+    
+  }
+ }
+ 
+ 
+ 
+ 
+.mktoButtonWrap {
+  width: 250px !important;
+  margin: 0px auto !important;
+}
+
+.mktoButton {
+    &:active, &:focus {
+      outline: none !important;
+    } 
+}
+
+.mktoForm .mktoRequiredField .mktoAsterix {
+display: inline-block !important;
+float: left !important;
+padding-right: .5em !important;
+}
+
+.mktoFieldWrap {
+  display: block !important;
+  float: none !important;
+  width: 100% !important;
+}
+
+

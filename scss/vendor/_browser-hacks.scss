@@ -1,0 +1,123 @@
+/* Link element fixes
+  ========================================================================== */
+/* Usage */
+a:focus {
+  outline: none;
+  border: none;
+}
+a img {
+  outline: none;
+  border: none;
+}
+
+/* Remove gray (on iOS devices) or yellow (on Android devices) highlight from links when touched
+  ========================================================================== */
+a {
+  -webkit-tap-highlight-color: rgba(0,0,0,0);
+}
+
+
+/* Input Placeholder Text Color
+  ========================================================================== */
+/* Usage */
+
+input::-webkit-input-placeholder {
+   color: #b2b2b2;
+}
+
+input:-moz-placeholder { /* Firefox 18- */
+   color: #b2b2b2;
+}
+
+input::-moz-placeholder {  /* Firefox 19+ */
+   color: #b2b2b2;
+}
+
+input:-ms-input-placeholder {
+   color: #b2b2b2;
+}
+
+
+
+/* Form related hacks and adjustments
+  ========================================================================== */
+/* TO DO/ADD HERE:
+   - Fix auto styling of input type[search] for webkit
+   - Fix focus styles that are auto applied in IE
+*/
+/* Fix auto border radius of submit and button inputs */
+input[type="submit"], input[type="button"] {
+  border-radius: 0px !important;
+  -webkit-border-radius: 0px !important;
+  
+  &:focus {
+    outline: none;
+  }
+}
+
+
+
+/* Chromeframe
+  ========================================================================== */
+/* Usage
+   - Include site admin email address link in the message copy?
+   - See header.php for the HTML markup for this component.
+ */
+.chromeframe-container {
+position: fixed;
+top: 0;
+left: 0;
+z-index: 1000000000;
+width: 100%;
+height: 100%;
+background-color: $primary-color;
+}
+
+.chromeframe-container .chromeframe-wrapper {
+position: relative;
+display: table;
+width: 100%;
+height: 100%;
+max-width: 800px;
+margin: 0 auto;
+}
+
+.chromeframe-container .chromeframe-wrapper img {
+max-width: 200px;
+margin-bottom: 1em;
+}
+
+.chromeframe-container .chromeframe-wrapper .chromeframe-inner {
+display: table-cell;
+color: $alert-color;
+text-align: center;
+vertical-align: middle;
+}
+
+.chromeframe-container .chromeframe-wrapper .chromeframe-inner h1 {
+font-weight: 400;
+font-size: 1.75em; 
+color: $alert-color;
+text-transform: uppercase;
+}
+
+
+
+/* Browser Hack Mixins and Extends
+  ========================================================================== */
+/* THIS NEEDS TO BE BUILT OUT!!! */
+ 
+ 
+@mixin inline-block {
+	display: -moz-inline-stack;	// ff 2
+	display: inline-block;
+  vertical-align: top;
+	zoom:1; *display: inline; _height: 15px; // ie 6-7
+	
+	     // IMPORTANT NOTE::
+       // May require the folowing additional styles to fully work cross-browser 
+       // min-height: 250px;
+       // _height: 250px;
+       // a <div> may need to be wrapped around the contents of a <li> element to display correctly in FireFox 
+       // for example:  <li> <div> ... </div> </li>
+}

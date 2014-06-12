@@ -1,0 +1,182 @@
+
+
+h1, h2, h3, h4, h5, h6 {
+  @extend %allCaps;
+  font-style: italic;
+} 
+h1.subheader, h2.subheader, h3.subheader, h4.subheader, h5.subheader, h6.subheader {
+    margin-bottom: 0em;
+    color: $mediumGray;
+    font-style: normal;
+}
+
+
+
+p.lead { 
+  font-weight: 800;
+}
+
+p.light {
+  font-weight: 300;
+}
+
+
+
+h1.hasChevron {
+  position: relative;
+  
+  &:before {
+  font-family: 'mtc-icons';
+  content: "\e610";
+  display: inline-block;
+  line-height: inherit;
+  speak: none;
+  font-weight: normal !important;
+  font-size: inherit;
+  font-style: normal !important;
+  }
+}
+
+
+
+h2.hasChevron {
+  position: relative;
+  
+  &:before {
+  font-family: 'mtc-icons';
+  content: "\e610";
+  display: inline-block;
+  line-height: inherit;
+  speak: none;
+  font-weight: normal !important;
+  font-size: inherit;
+  font-style: normal !important;
+  }
+}
+
+
+h3.hasChevron {
+  position: relative;
+  
+  &:before {
+  font-family: 'mtc-icons';
+  content: "\e610";
+  display: inline-block;
+  line-height: inherit;
+  speak: none;
+  font-weight: normal !important;
+  font-size: inherit;
+  font-style: normal !important;
+  }
+}
+
+
+h4.hasChevron {
+  position: relative;
+  
+  &:before {
+  font-family: 'mtc-icons';
+  content: "\e610";
+  display: inline-block;
+  line-height: inherit;
+  speak: none;
+  font-weight: normal !important;
+  font-size: inherit;
+  font-style: normal !important;
+  }
+}
+
+
+
+
+
+
+h1.hasChevron.red { 
+  position: relative;
+  &:before {
+  color: $primary-color;
+  }
+}
+
+h2.hasChevron.red { 
+  position: relative;
+  &:before {
+  color: $primary-color;
+  }
+}
+
+h3.hasChevron.red { 
+  position: relative;
+  &:before {
+  color: $primary-color;
+  }
+}
+
+h4.hasChevron.red { 
+  position: relative;
+  &:before {
+  color: $primary-color;
+  }
+}
+
+
+
+h1.hasChevron.secondary { 
+  position: relative;
+  &:before {
+  color: $secondary-color;
+  }
+}
+
+h2.hasChevron.secondary { 
+  position: relative;
+  &:before {
+  color: $secondary-color;
+  }
+}
+
+h3.hasChevron.secondary { 
+  position: relative;
+  &:before {
+  color: $secondary-color;
+  }
+}
+
+h4.hasChevron.secondary { 
+  position: relative;
+  &:before {
+  color: $secondary-color;
+  }
+}
+
+
+
+h1.hasChevron.white { 
+  position: relative;
+  &:before {
+  color: $white;
+  }
+}
+
+h2.hasChevron.white { 
+  position: relative;
+  &:before {
+  color: $white;
+  }
+}
+
+h3.hasChevron.white { 
+  position: relative;
+  &:before {
+  color: $white;
+  }
+}
+
+h4.hasChevron.white { 
+  position: relative;
+  &:before {
+  color: $white;
+  }
+}
+
+

@@ -1,0 +1,19 @@
+
+
+ 
+
+footer.pageFooter { 
+  background-color: #272627;
+  @include gradient(linear,top,rgb(39, 38, 39),rgb(0, 0, 0),'left top, left bottom');
+  filter: progid:DXImageTransform.Microsoft.gradient(GradientType=0,StartColorStr='#272627', EndColorStr='#000000');
+ 
+  width: 100%;
+  margin: 0px auto;
+  padding: 0em;
+  position: relative;
+  
+  p, a { color: $white; font-weight: 400; }
+  
+  .row { padding: 2em 0em; }
+  
+}

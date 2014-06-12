@@ -1,0 +1,138 @@
+/*==========  MAKE SURE THE CHARSET IS SET APPROPRIATELY  ==========*/
+@charset "UTF-8";
+
+/*==========  FOUNDATION NORMALIZE  ==========*/
+@import "vendor/foundation/normalize";
+
+// Gotham Fontface
+@import "//cloud.typography.com/6052252/694102/css/fonts.css";
+
+
+/*==========  THIS INCLUDES ALL OF THE FOUNDATION GLOBAL ELEMENTS THAT ARE NEEDED TO WORK WITH ANY OF THE OTHER FILES  ==========*/
+@import "vendor/foundation/variables";
+
+
+/*===========================================
+=            FOUNDATION PARTIALS            =
+===========================================*/
+
+@import
+  "vendor/foundation/components/global",
+  "vendor/foundation/components/grid",
+  "vendor/foundation/components/visibility",
+  "vendor/foundation/components/block-grid",
+  "vendor/foundation/components/type",
+  "vendor/foundation/components/buttons",
+  "vendor/foundation/components/forms",
+  "vendor/foundation/components/button-groups",
+  "vendor/foundation/components/dropdown-buttons",
+  "vendor/foundation/components/split-buttons",
+  "vendor/foundation/components/flex-video",
+  "vendor/foundation/components/section",
+  "vendor/foundation/components/top-bar",
+  "vendor/foundation/components/orbit",
+  "vendor/foundation/components/reveal",
+  "vendor/foundation/components/joyride",
+  "vendor/foundation/components/clearing",
+  "vendor/foundation/components/alert-boxes",
+  "vendor/foundation/components/breadcrumbs",
+  "vendor/foundation/components/custom-forms",
+  "vendor/foundation/components/keystrokes",
+  "vendor/foundation/components/labels",
+  "vendor/foundation/components/inline-lists",
+  "vendor/foundation/components/pagination",
+  "vendor/foundation/components/panels",
+  "vendor/foundation/components/pricing-tables",
+  "vendor/foundation/components/progress-bars",
+  "vendor/foundation/components/side-nav",
+  "vendor/foundation/components/sub-nav",
+  "vendor/foundation/components/switch",
+  "vendor/foundation/components/magellan",
+  "vendor/foundation/components/tables",
+  "vendor/foundation/components/thumbs",
+  "vendor/foundation/components/tooltips",
+  "vendor/foundation/components/dropdown";
+
+/*-----  End of FOUNDATION PARTIALS  ------*/
+
+
+/*====================================
+=            FONT AWESOME            =
+====================================*/
+
+@import
+  "fontawesome/variables",
+  "fontawesome/mixins",
+  "fontawesome/path",
+  "fontawesome/core",
+  "fontawesome/larger",
+  "fontawesome/fixed-width",
+  "fontawesome/list",
+  "fontawesome/bordered-pulled",
+  "fontawesome/spinning",
+  "fontawesome/rotated-flipped",
+  "fontawesome/stacked",
+  "fontawesome/icons";
+
+/*-----  End of FONT AWESOME  ------*/
+
+
+
+/*==========  BROWSER-HACKS  ==========*/
+@import "vendor/browser-hacks";
+
+
+/*===============================
+=            MODULES            =
+===============================*/
+
+@import
+  "custom/modules/variables",
+  "custom/modules/typography";
+   
+// this file has no styles, only Marketo specific web form selectors; remove if project is not a landing page that will be served by Marketo
+@import "custom/modules/marketo-forms";
+
+  
+/*-----  End of MODULES  ------*/
+
+
+/*==============================
+=            MIXINS            =
+==============================*/
+
+@import
+  "custom/mixins/bgSizeCover",
+  "custom/mixins/fonts",
+  "custom/mixins/mtc-extends";
+
+/*-----  End of MIXINS  ------*/
+
+
+/*=======================================
+=            CUSTOM PARTIALS            =
+=======================================*/
+
+@import
+  "custom/partials/mtc-globals",
+  "custom/partials/mtc-forms",  
+  "custom/partials/mtc-footer",
+  "custom/partials/mtc-header",
+  "custom/partials/mtc-panels",
+  "custom/partials/mtc-hero-units",
+  "custom/partials/mtc-images",
+  "custom/partials/mtc-typography",
+  "custom/partials/mtc-buttons", 
+  "custom/partials/mtc-custom-icons";
+
+/*-----  End of CUSTOM PARTIALS  ------*/
+
+
+
+
+/*=======================================
+=         LP SPECIFIC STYLES            =
+=======================================*/
+
+@import "custom/partials/style-guide-only";
+
