@@ -2,11 +2,11 @@
 .button, button {
   text-transform: uppercase !important;
   font-weight: 800 !important;
-  transition: all 0.3s ease;
-  -webkit-transition: all 0.3s ease;
-  -moz-transition: all 0.3s ease;
-  -ms-transition: all 0.3s ease;
-  -o-transition: all 0.3s ease;
+  
+  transition: all 0.3s linear;
+  -webkit-transition: all 0.3s linear;
+  -moz-transition: all 0.3s linear; 
+  -o-transition: all 0.3s linear;
   
   // @extend %sharpTextShadow;
 }
@@ -18,19 +18,25 @@
   @include gradient(linear,top,rgb(189, 5, 31),rgb(234, 3, 42),'left top, left bottom');
   filter: progid:DXImageTransform.Microsoft.gradient(GradientType=0,StartColorStr='#bd051f', EndColorStr='#ea032a'); 
 
-  transition: all 0.3s ease;
-  -webkit-transition: all 0.3s ease;
-  -moz-transition: all 0.3s ease;
-  -ms-transition: all 0.3s ease;
-  -o-transition: all 0.3s ease;
+   
+          
+  border-radius: 6px;
+  -moz-border-radius: 6px;
+  -webkit-border-radius: 6px; 
+  background-clip: padding-box; // prevent background leak on radius corners 
+  
+  transition: all 0.3s linear;
+  -webkit-transition: all 0.3s linear;
+  -moz-transition: all 0.3s linear; 
+  -o-transition: all 0.3s linear;
   
   letter-spacing: 1px; 
   
   // @extend %sharpTextShadow;
   
-  -webkit-box-shadow: 0px 2px 1px 0px rgba(50, 50, 50, 0.75);
-  -moz-box-shadow:    0px 2px 1px 0px rgba(50, 50, 50, 0.75);
-  box-shadow:         0px 2px 1px 0px rgba(50, 50, 50, 0.75);
+  -webkit-box-shadow: 0px 1px 3px 0px rgba(50, 50, 50, 0.5);
+  -moz-box-shadow:    0px 1px 3px 0px rgba(50, 50, 50, 0.5);
+  box-shadow:         0px 1px 3px 0px rgba(50, 50, 50, 0.5);
           
   &:hover {
     background-color: #a8031b;
@@ -39,5 +45,42 @@
   }
 }
 
+
+
+
+
+.button.secondaryGradient, button.secondaryGradient {
+  background-color: #c9c7c6;
+  @include gradient(linear,top,rgb(201, 199, 198),rgb(62, 62, 62),'left top, left bottom');
+  filter: progid:DXImageTransform.Microsoft.gradient(GradientType=0,StartColorStr='#c9c7c6', EndColorStr='#3e3e3e');
+
+    border-radius: 6px;
+  -moz-border-radius: 6px;
+  -webkit-border-radius: 6px; 
+ 
+  background-clip: padding-box; // prevent background leak on radius corners
+  
+ 
+  transition: all 0.3s linear;
+  -webkit-transition: all 0.3s linear;
+  -moz-transition: all 0.3s linear; 
+  -o-transition: all 0.3s linear;
+  
+  letter-spacing: 1px; 
+  
+  // @extend %sharpTextShadow;
+  
+  -webkit-box-shadow: 0px 1px 3px 0px rgba(50, 50, 50, 0.5);
+  -moz-box-shadow:    0px 1px 3px 0px rgba(50, 50, 50, 0.5);
+  box-shadow:         0px 1px 3px 0px rgba(50, 50, 50, 0.5);
+  
+  border-color: darken(#c9c7c6, 10%);
+  
+  &:hover {
+  background-color: darken(#c9c7c6, 5%);
+  @include gradient(linear,top,darken(rgb(201, 199, 198), 5%),darken(rgb(62, 62, 62),5%),'left top, left bottom');
+  filter: progid:DXImageTransform.Microsoft.gradient(GradientType=0,StartColorStr='darken(#c9c7c6, 5%)', EndColorStr='darken(#3e3e3e, 5%)');
+  }
+}
 
 

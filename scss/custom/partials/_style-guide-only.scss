@@ -41,6 +41,9 @@ nav.mainNav {
 
 
 ul.mtcIcons {
+  .panel {
+    background: $white;
+  }
   [class^="icon-"], [class*=" icon-"] { 
     display: block;
     font-size: 80px;
