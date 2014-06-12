@@ -56,9 +56,10 @@ select {
 .custom-select .btn-select {
 	/* the hidden select and the button should line up */
 	width: 20em; 
-	padding: .2em .5em;
-	font-weight: bold;
+	padding: .5em .5em;
+	font-weight: 700;
 }
+
 .custom-select .btn-select {
 	position: relative;
 	display: inline-block;
@@ -68,6 +69,7 @@ select {
 .btn-select.btn-focus {
 	border-color: $primary-color;
 	box-shadow: 0 0 .4em rgba(200,200,200,.8);
+	position: relative;
 }
 .custom-select .btn-select:after {
 	content: " ";	
@@ -76,12 +78,14 @@ select {
 	width: 1em;
 	height: 1em;
 	position: absolute;
-	top: 0em;
+	top: .25em;
 	right: 0;
 	background-position: 0 .5em;
 }
-.custom-select .label-text {
-	display: inline-block;
+.custom-select .label-text { 
+
+	position: absolute;
+	background: $white;
 	padding: 0 1em .3em 0;
 }
 

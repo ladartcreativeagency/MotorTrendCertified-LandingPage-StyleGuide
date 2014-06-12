@@ -5,6 +5,6 @@ jQuery(document).ready(function($) {
       
       // Forms
       //@prepros-append jquery.placeholder.js
-      //@prepros-append checkboxradio.js
       //@prepros-append select.js
+      //@prepros-append checkboxradio.js
 });
