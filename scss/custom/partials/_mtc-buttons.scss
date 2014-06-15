@@ -79,8 +79,14 @@
   &:hover {
   background-color: darken(#c9c7c6, 5%);
   @include gradient(linear,top,darken(rgb(201, 199, 198), 5%),darken(rgb(62, 62, 62),5%),'left top, left bottom');
-  filter: progid:DXImageTransform.Microsoft.gradient(GradientType=0,StartColorStr='darken(#c9c7c6, 5%)', EndColorStr='darken(#3e3e3e, 5%)');
+  filter: progid:DXImageTransform.Microsoft.gradient(GradientType=0,StartColorStr='#b5b5b5', EndColorStr='#343534');
   }
 }
 
+ 
+ 
+ 
+.postfix.button, .prefix.button {
+line-height: 2.3125em !important;
+}
 

@@ -6,6 +6,6 @@
 	background-size: cover;
     /* The url is relative to the document, not to the css file! */
     /* Prefer absolute urls to avoid confusion. */ 
-    -ms-behavior: url(http://www.easycaredealer.com/marketo-assets/mtc-landingpage-styleguide/js/vendor/backgroundsize.min.htc);
-    behavior: url(http://www.easycaredealer.com/marketo-assets/mtc-landingpage-styleguide/js/vendor/backgroundsize.min.htc);
+    -ms-behavior: url(backgroundsize.min.htc);
+    behavior: url(backgroundsize.min.htc);
 }

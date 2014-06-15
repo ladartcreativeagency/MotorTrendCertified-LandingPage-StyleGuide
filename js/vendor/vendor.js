@@ -1,10 +1,9 @@
 
 jQuery(document).ready(function($) {
       // Polyfills
-    	//@prepros-append SVGMagic.min.js
+    	//@prepros-append svgeezy.js
       
       // Forms
-      //@prepros-append jquery.placeholder.js
-      //@prepros-append select.js
+      //@prepros-append jquery.placeholder.js 
       //@prepros-append checkboxradio.js
 });

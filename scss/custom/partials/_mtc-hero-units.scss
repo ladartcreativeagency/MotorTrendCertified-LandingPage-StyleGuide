@@ -9,7 +9,8 @@ section.heroUnit {
 	background-size: cover;
   /* The url is relative to the document, not to the css file! */
   /* Prefer absolute urls to avoid confusion. */
-  -ms-behavior: url(../../../javascripts/vendor/backgroundsize.min.htc);
+  -ms-behavior: url(backgroundsize.min.htc);
+  behavior: url(backgroundsize.min.htc);
   width: 100%;
   margin: 0px auto;
   padding: 0px;
