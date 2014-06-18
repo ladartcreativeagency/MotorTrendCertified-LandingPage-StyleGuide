@@ -70,7 +70,7 @@ left: 0;
 z-index: 1000000000;
 width: 100%;
 height: 100%;
-background-color: $primary-color;
+background-color: $black;
 }
 
 .chromeframe-container .chromeframe-wrapper {
@@ -89,7 +89,7 @@ margin-bottom: 1em;
 
 .chromeframe-container .chromeframe-wrapper .chromeframe-inner {
 display: table-cell;
-color: $alert-color;
+color: $white;
 text-align: center;
 vertical-align: middle;
 }
@@ -97,7 +97,7 @@ vertical-align: middle;
 .chromeframe-container .chromeframe-wrapper .chromeframe-inner h1 {
 font-weight: 400;
 font-size: 1.75em; 
-color: $alert-color;
+color: $white;
 text-transform: uppercase;
 }
 

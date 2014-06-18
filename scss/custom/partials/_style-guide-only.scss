@@ -108,3 +108,27 @@ span.mls {
 }
 
 
+
+
+
+
+
+
+
+
+img.whyCPOHeader {
+  position: relative;
+  top: 2.5em;
+  z-index: 3;
+}
+ 
+/* SMALL SCREENS ONLY (portrait and landscape) ----------- */
+@media only screen and (max-width: 480px) and (min-width: 320px) {
+ 
+img.whyCPOHeader {
+  position: relative;
+  top: 1.5em;
+  z-index: 3;
+}
+ 
+}

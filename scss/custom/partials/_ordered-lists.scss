@@ -1,0 +1,106 @@
+
+span.bold {
+  font-weight: 600 !important;
+}
+
+
+
+ol.whyCPO {
+    counter-reset:li; /* Initiate a counter */
+    margin-left:0 !important; /* Remove the default left margin */
+    padding-left:0 !important; /* Remove the default left padding */
+    margin-bottom: 0em !important;
+}
+
+ol.whyCPO > li {
+    position:relative; /* Create a positioning context */
+    margin:0em auto; /* Give each list item a left margin to make room for the numbers */
+    padding:3em 1em; /* Add some spacing around the content */
+    list-style:none; /* Disable the normal item numbering */
+    
+    background-color: #fdfcfe;
+    @include gradient(linear,top,rgb(253, 252, 254),rgb(225, 225, 225),'left top, left bottom');
+    filter: progid:DXImageTransform.Microsoft.gradient(GradientType=0,StartColorStr='#fdfcfe', EndColorStr='#e1e1e1'); 
+    
+    p {
+      margin-left: 2em;
+      margin-bottom: 0em;
+      font-size: 2em;
+      font-style: italic;
+    	font-family: 'Gotham Cond A', 'Gotham Cond B';  
+      font-weight: 400;
+    }   
+}
+
+ol.whyCPO > li:before {
+    content:counter(li); /* Use the counter as content */
+    counter-increment:li; /* Increment the counter by 1 */
+    
+    /* Position and style the number */
+    position: absolute;
+    top: .25em;
+    left: .25em; 
+    width: 60px;
+    height: 60px;
+    
+    /* Some space between the number and the content in browsers that support
+       generated content but not positioning it (Camino 2 is one example) */
+       
+    /* margin-right: 8px; */
+    
+    color: $primary-color;
+   
+    font-size: 50px;
+    font-style: italic;
+  	font-family: 'Gotham Cond A', 'Gotham Cond B';  
+    font-weight: 900;
+   
+    -webkit-box-shadow: 0 0 11px rgba(0,0,0,.35);
+    box-shadow: 0 0 11px rgba(0,0,0,.35);
+    border-radius: 60px;
+    background: #fbfbfb;
+    text-align: center;
+    line-height: 60px;
+    text-indent: 0em;
+}
+ 
+
+ol.whyCPO li:last-child { margin-bottom:0; }
+
+
+
+
+
+
+/* SMALL SCREENS ONLY (portrait and landscape) ----------- */
+@media only screen and (max-width: 480px) and (min-width: 320px) {
+
+  
+  ol.whyCPO > li { 
+  
+      margin:0em auto; /* Give each list item a left margin to make room for the numbers */
+      padding:3em 1em; /* Add some spacing around the content */ 
+
+      p {
+        margin-left: 0em; 
+        font-size: 1.25em;  
+        margin-top: 1.75em;
+      }   
+      img.aligncenter {
+      margin-top: 0.5em;
+      padding-left: 4em;
+      }
+  }
+  ol.whyCPO > li:before {
+    content:counter(li); /* Use the counter as content */
+    counter-increment:li; /* Increment the counter by 1 */
+    
+    /* Position and style the number */
+    position: absolute;
+    top: .5em;
+    left: .25em;
+    
+    }
+} // END SMALL PORTRAIT AND LANDSCAPE
+ 
+ 
